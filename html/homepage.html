@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <style>
+    .banner {
+        min-height: 612px;
+        display: flex;
+    }
+    .right-side {
+        flex: 0 0 60%;
+    }
+    .left-side {
+        flex: 0 0 40%;
+    }
+    .white-product {
+        background-image: url('https://via.placeholder.com/932x612');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    .pink-product {
+        background-image: url('https://via.placeholder.com/508x306');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+    .cream-product {
+        background-image: url('https://via.placeholder.com/508x306');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover; 
+    }
+
+    .pink-product,
+    .cream-product {
+        height: 50%;
+    }
+
+    .category {
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        display: inline-block;
+        padding: 2px 5px;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+
+    .right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        padding: 160px;
+        color: #fff;
+
+    }
+    .white-product .head {
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    .banner-button {
+        border-radius: 2px;
+        border-color: #fff;
+        background-color: rgba(255,255,255,0.85);
+        color: #005F57;
+        font-size: 16px;
+        font-weight: 700;
+        max-width: 236px;
+        width: 100%;
+        padding: 20px 10px;
+        transition: .3s;
+    }
+
+    .banner-button:hover,
+    .banner-button:active, 
+    .banner-button:focus {
+        background-color: #005F57;
+        border-color: #005F57;
+        color: #fff;
+    }
+
+    .banner-button::after {
+        content: "\f061";
+        font-family: "Font Awesome 5 Free";
+        margin-left: 15px;
+    }
+    .pink-product,
+    .cream-product {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: end;
+        padding: 60px;
+    }
+
+    /* Standout section  */
+    .standout {
+        min-height: 750px;
+        display: flex;
+        flex-direction: column;
+        padding: 130px 160px;
+        justify-content: center;
+    }
+
+    .standout .head {
+        font-size: 50px;
+        margin-bottom: 40px;
+    }
+
+    .standout .lead {
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+
+
+
+    /* Basic Media Query  */
+    @media (min-width: 992px) and (max-width: 1199px) {
+	
+    }
+
+    @media  (max-width: 991px) {
+        .right-side {
+            padding: 80px;
+        }
+        .pink-product, .cream-product {
+            padding: 40px;
+        }
+        .white-product .head {
+            font-size: 28px;
+        }
+        .banner-button {
+            padding: 15px 10px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .banner {
+            display: block;
+        }
+
+        .right-side {
+            padding: 25px;
+        }
+
+        .pink-product, .cream-product {
+            padding: 25px;
+        }
+        
+    }
+
+    </style>
+</head>
+<body>
+    <section class="banner">
+        <div class="right-side white-product">
+            <div class="category">PEP-30AZ/50AZ</div>
+            <h2 class="head">手にも 環境にもフィットする<br>わたしのためのスタイル</h2>
+            <a class="btn btn-primary banner-button" href="#" role="button">このデザインを見る</a>
+        </div>
+        <div class="left-side">
+            <div class="pink-product">
+                <div class="category">PEP-30AZ/50AZ</div>
+                <a class="btn btn-primary banner-button" href="#" role="button">このデザインを見る</a>
+            </div>
+            <div class="cream-product">
+                <div class="category">PEP-30AZ/50AZ</div>
+                <a class="btn btn-primary banner-button" href="#" role="button">このデザインを見る</a>
+            </div>
+        </div>
+    </section>
+    <section class="standout">
+        <h1 class="head">すべては Standout な <br>価値のために。</h1>
+        <p class="lead">カタチあるウツワを通じて、お客様の商品アイデアの実現に貢献すること。<br>それが、私たち竹本容器の使命です。</p>
+        <p class="lead">その考えに基づき、当社はプロセス上のあらゆる段階で求められる要件を満たし、<br>適切な容器を作り出す独自のトータルパッケージングソリューションをご提供しています。</p>
+        <div class="3d">
+            <img src="" alt="see 3d">
+            <p>自分だけのオリジナルボトルを3Dで デザインしてみることができます</p>
+            <div class="3d-highlight">
+                <img src="" alt="icon">
+                <p>3Dシュミレーター</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
